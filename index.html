@@ -12,26 +12,29 @@
 
 <body>
   <!-- Header con identidad de marca -->
-  <header style="background-color: #ff6f00; color: white; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between;">
+  <header style="background-color: #ff6f00; color: white; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
     <div style="display: flex; align-items: center;">
-    <img src="icono metromaps.png" alt="MetroMapsApp Logo" style="height: 50px; margin-right: 15px;">
-
-      <h1 style="margin: 0; font-size: 1.8em;">MetroMapsApp</h1>
+      <img src="icono metromaps.png" alt="MetroMapsApp Logo" style="height: 48px; width: auto; margin-right: 15px;">
+      <div>
+        <h1 style="margin: 0; font-size: 1.8em;">MetroMapsApp</h1>
+        <span style="font-size: 1em; font-weight: bold;">Muévete fácil, muévete smart 🚇📱</span>
+      </div>
     </div>
-    <span style="font-size: 1em; font-weight: bold;">Muévete fácil, muévete smart 🚇📱</span>
   </header>
 
   <!-- Contenedor del mapa -->
   <div id="map" style="width:100%; height:500px;"></div>
 
   <!-- Controles de ruta -->
-  <select id="origen"></select>
-  <select id="destino"></select>
-  <button onclick="calcularRuta()">Calcular ruta</button>
+  <div style="margin: 20px 0; display: flex; gap: 10px; flex-wrap: wrap;">
+    <select id="origen"></select>
+    <select id="destino"></select>
+    <button onclick="calcularRuta()">Calcular ruta</button>
+  </div>
 
   <!-- Información dinámica -->
-  <div id="info"></div>
-  <div id="descripcion"></div>
+  <div id="info" style="margin-bottom: 10px;"></div>
+  <div id="descripcion" style="margin-bottom: 20px;"></div>
 
   <!-- Sección Sobre el proyecto -->
   <section id="sobre-proyecto" style="margin-top: 2em; padding: 1em; background: #f9f9f9; border-radius: 6px;">
@@ -52,4 +55,3 @@
   <script src="./script.js"></script>
 </body>
 </html>
-
