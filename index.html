@@ -2,45 +2,40 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>MetroMapsApp 🚇
-</title>
-
-  <!-- Metaetiqueta de verificación AdSense -->
-  <meta name="google-adsense-account" content="ca-pub-9797550745211576">
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TP22DJ7C68"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-TP22DJ7C68');
-  </script>
-
-  <!-- Google AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9797550745211576" crossorigin="anonymous"></script>
-
+  <title>MetroMapsApp 🚇📱</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+
+  <!-- Mapbox CSS y JS -->
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
 </head>
 
 <body>
-  <header>
-    <h1>Metro de Monterrey</h1>
+  <!-- Header con identidad de marca -->
+  <header style="background-color: #ff6f00; color: white; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between;">
+    <div style="display: flex; align-items: center;">
+      <img src="assets/logo.png" alt="MetroMapsApp Logo" style="height: 40px; margin-right: 15px;">
+      <h1 style="margin: 0; font-size: 1.8em;">MetroMapsApp</h1>
+    </div>
+    <span style="font-size: 1em; font-weight: bold;">Muévete fácil, muévete smart 🚇📱</span>
   </header>
-  <div id="map"></div>
 
+  <!-- Contenedor del mapa -->
+  <div id="map" style="width:100%; height:500px;"></div>
+
+  <!-- Controles de ruta -->
   <select id="origen"></select>
   <select id="destino"></select>
   <button onclick="calcularRuta()">Calcular ruta</button>
 
+  <!-- Información dinámica -->
   <div id="info"></div>
   <div id="descripcion"></div>
 
   <!-- Sección Sobre el proyecto -->
   <section id="sobre-proyecto" style="margin-top: 2em; padding: 1em; background: #f9f9f9; border-radius: 6px;">
-    <h2>Informcion importante:</h2>
+    <h2>Información importante:</h2>
+    <p>
       MetroMapsApp es una herramienta independiente creada por ND para facilitar la consulta de rutas del metro en Monterrey y otras ciudades.
       Utiliza datos públicos de transporte y un diseño propio para ofrecer una experiencia clara, accesible y confiable.
       Su objetivo es brindar a los usuarios una forma sencilla de planear sus trayectos y compartir información útil con la comunidad.
@@ -52,6 +47,8 @@
     Este sitio es un proyecto independiente y no está afiliado ni patrocinado por Metrorrey ni por el Gobierno de Nuevo León.
   </footer>
 
+  <!-- Script principal -->
   <script src="./script.js"></script>
 </body>
 </html>
+
