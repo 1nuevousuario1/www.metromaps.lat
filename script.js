@@ -1,5 +1,5 @@
 // Token de Mapbox (reemplaza con el tuyo)
-mapboxgl.accessToken = 'TU_TOKEN_DE_MAPBOX';
+mapboxgl.accessToken = 'pk.eyJ1Ijoic29sb3lveWplaG92YSIsImEiOiJjbWsyZ3FheXcwZnE5M2ZxNHduOTBnM3c2In0.c6ZiIV6kck5DH-pY9ftlTg';
 
 // Inicializar mapa centrado en Monterrey
 const map = new mapboxgl.Map({
